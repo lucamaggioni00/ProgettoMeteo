@@ -1,0 +1,25 @@
+    {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Portale Meteo | APP, Meteo, Previsioni, Temperatura - Milano",
+            "description": "Portale Meteo di libero accesso per la consultazione delle previsioni in varie città del mondo",
+            "keywords": "meteo, previsioni, temperatura",
+            "inLanguage": "it",
+            "copyrightYear": "2022-2022",
+            "author": {
+                "@type": "Person",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milano",
+                    "addressRegion": "IT",
+                    "postalCode": "20019",
+                    "streetAddress": "Via Celoria, 18, Milano",
+                    "addressCountry": "IT"
+                },
+
+                  "email": "mailto:luca.maggioni4@studenti.unimi.it",
+                  "jobTitle": "IT student",
+                  "name": "Luca M",
+                  "telephone": "(425) 123-4567"
+            }
+    }
