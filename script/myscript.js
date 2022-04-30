@@ -8,9 +8,12 @@ function ChangeThemeColor() {
 }
 
 /* chiamata API per temperatura */
+var token = config.MY_API_TOKEN;
+var key = config.SECRET_API_KEY;
+
 async function getWeather() {
 	// meteo milano
-	let responseMI = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=45.4654219&lon=9.1859243&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responseMI = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=45.4654219&lon=9.1859243&units=metric&appid=" + key,{
 		method: "GET"
 	});
 
@@ -19,7 +22,7 @@ async function getWeather() {
 	document.getElementById("Milano-Temp").innerText = jsonObjMI.main.temp + "°";
 
 	// meteo roma
-	let responseRO = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.90&lon=12.49&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responseRO = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.90&lon=12.49&units=metric&appid=" + key,{
 		method: "GET"
 	});
 
@@ -28,7 +31,7 @@ async function getWeather() {
 	document.getElementById("Roma-Temp").innerText = jsonObjRO.main.temp + "°";
 
 	// meteo sidney
-	let responseSID = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=-33.86&lon=151.20&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responseSID = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=-33.86&lon=151.20&units=metric&appid=" + key,{
 		method: "GET"
 	});
 
@@ -37,7 +40,7 @@ async function getWeather() {
 	document.getElementById("Sidney-Temp").innerText = jsonObjSID.main.temp + "°";
 
 	// meteo andria
-	let responseAND = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.22&lon=16.29&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responseAND = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.22&lon=16.29&units=metric&appid=" + key,{
 		method: "GET"
 	});
 
@@ -46,7 +49,7 @@ async function getWeather() {
 	document.getElementById("Andria-Temp").innerText = jsonObjAND.main.temp + "°";
 
 	// meteo parigi
-	let responsePAR = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=48.85&lon=2.35&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responsePAR = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=48.85&lon=2.35&units=metric&appid=" +key,{
 		method: "GET"
 	});
 
@@ -55,7 +58,7 @@ async function getWeather() {
 	document.getElementById("Parigi-Temp").innerText = jsonObjPAR.main.temp + "°";
 
 	// meteo oslo
-	let responseOSL = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=59.91&lon=10.75&appid=38c081519a5ca27bcef0b52c9d5787cb&units=metric",{
+	let responseOSL = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=59.91&lon=10.75&units=metric&appid=" + key,{
 		method: "GET"
 	});
 
