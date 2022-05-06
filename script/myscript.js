@@ -1,11 +1,15 @@
 console.log("Inizio");
 
+// funzione per dark theme
 ThemeButton.addEventListener("click", ChangeThemeColor);
 
 //TODO mettere toggle
 function ChangeThemeColor() { 
-  
+
 }
+
+
+//------------------------------
 
 /* chiamata API per temperatura */
 var token = config.MY_API_TOKEN;
