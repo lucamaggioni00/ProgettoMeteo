@@ -78,7 +78,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 } 
 
-/* REGOLE AGGIUNTE DA ME */
+/* COLORI TITOLI */
 
 .titoloNero {
   color: black;
@@ -88,4 +88,16 @@ input:checked + .slider:before {
 .titoloBianco {
   color: white;
   font-weight: bold;
+}
+
+/* FOTO */
+
+/* andria */
+#andriaImage {
+   background-image: url("../images/andria-big.jpg");
+   background-color: #cccccc;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 30% 90%;
+   background-attachment: fixed;
 }
